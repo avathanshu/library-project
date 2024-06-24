@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #61a861;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    flex: 1;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    font-size: 24px;
+    border-radius: 12px;
+    border-left: 10px solid #61a861;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    background-color: #61a861;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.remove, .markRead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #61a861;
+    border: 1px solid #61a861;
+    border-radius: 8px;
+    color: white;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #82cd82;
+}
